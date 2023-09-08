@@ -96,3 +96,141 @@ svg{
      transform:scale(1);
   }
 }
+
+/* responsive */
+
+@media(min-width:270px) and (max-width:478px) {
+  svg{
+    animation: shrink 2s ease-in-out;
+    animation-delay: 2.2s;
+    animation-fill-mode: forwards;
+    width:100px;
+    margin-right: 150px;
+    margin-bottom: 150px;
+  } 
+  #loader h1{
+    color:#d1cfcf;
+    position:relative;
+    top: 70px;
+    /* margin-right: 100px; */
+    font-size: 16px;
+    font-weight: 900;
+    left: 130px;
+    animation: shrink 2s ease-in-out;
+    animation-delay: 2.2s;
+    animation-fill-mode: forwards;
+  }
+
+}
+
+@media(min-width:479px) and (max-width:579px) {
+  svg{
+    animation: shrink 2s ease-in-out;
+    animation-delay: 2.2s;
+    animation-fill-mode: forwards;
+    width:100px;
+    margin-right: 190px;
+    margin-bottom: 150px;
+  } 
+  #loader h1{
+    color:#d1cfcf;
+    position:relative;
+    top: 70px;
+    /* margin-right: 100px; */
+    font-size: 23px;
+    left: 170px;
+    animation: shrink 2s ease-in-out;
+    animation-delay: 2.2s;
+    animation-fill-mode: forwards;
+  }
+
+
+}
+
+@media(min-width:580px) and (max-width:767px) {
+  svg{
+    animation: shrink 2s ease-in-out;
+    animation-delay: 2.2s;
+    animation-fill-mode: forwards;
+    width:100px;
+    margin-right: 230px;
+    margin-bottom: 150px;
+  } 
+  #loader h1{
+    color:#d1cfcf;
+    position:relative;
+    top: 70px;
+    /* margin-right: 100px; */
+    font-size: 27px;
+    left: 190px;
+    animation: shrink 2s ease-in-out;
+    animation-delay: 2.2s;
+    animation-fill-mode: forwards;
+  }
+
+
+}
+
+@media (min-width:768px) and (max-width:991px) {
+
+  svg{
+    animation: shrink 2s ease-in-out;
+    animation-delay: 2.2s;
+    animation-fill-mode: forwards;
+    width:100px;
+    margin-right: 300px;
+    margin-bottom: 150px;
+  } 
+  #loader h1{
+    color:#d1cfcf;
+    position:relative;
+    top: 70px;
+    left: 250px;
+    animation: shrink 2s ease-in-out;
+    animation-delay: 2.2s;
+    animation-fill-mode: forwards;
+  }
+}
+
+@media (min-width:992px) and (max-width:1199px) {
+  
+  svg{
+    animation: shrink 2s ease-in-out;
+    animation-delay: 2.2s;
+    animation-fill-mode: forwards;
+    width:100px;
+    margin-right: 150px;
+    margin-bottom: 150px;
+  } 
+  #loader h1{
+    color:#d1cfcf;
+    position:relative;
+    top: 70px;
+    left: 250px;
+    animation: shrink 2s ease-in-out;
+    animation-delay: 2.2s;
+    animation-fill-mode: forwards;
+  }
+}
+
+@media (min-width:1200px) and (max-width:1600px) {
+  svg{
+    animation: shrink 2s ease-in-out;
+    animation-delay: 2.2s;
+    animation-fill-mode: forwards;
+    width:100px;
+    margin-right: 450px;
+    margin-bottom: 150px;
+  } 
+  #loader h1{
+    color:#d1cfcf;
+    position:relative;
+    top: 70px;
+    left: 250px;
+    animation: shrink 2s ease-in-out;
+    animation-delay: 2.2s;
+    animation-fill-mode: forwards;
+  }
+}
+
+/* responsive */
