@@ -1,0 +1,98 @@
+body{
+  margin: 0;
+  padding: 0;
+}
+
+#loader{
+  position:fixed;
+  top:0;
+  z-index:10000;
+  background: #1a1a1a;
+  display:flex;
+  min-height:100vh;
+  width:100%;
+  align-items:center;
+  text-align:center;
+  justify-content:center;
+}
+
+#loader h1{
+  color:#d1cfcf;
+  position:relative;
+  top: 70px;
+  left: 250px;
+  animation: shrink 2s ease-in-out;
+  animation-delay: 2.2s;
+  animation-fill-mode: forwards;
+}
+
+path{
+  stroke-linecap:round;
+  stroke-width:10;
+  stroke-linejoin:"round";
+} 
+
+#left-half{
+  stroke-dasharray: 1000;
+  stroke-dashoffset: 999;
+  animation: animate-right-half 3s ease-in;
+  animation-delay: 1s;
+  animation-fill-mode: forwards;
+}
+
+#right-half{
+  width:50px;
+  height:50px;
+  border-radius:50%;
+  stroke-dasharray: 1000;
+  stroke-dashoffset: 999;
+  animation: animate-right-half 3s ease-in;
+  animation-delay: 1s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes animate-right-half{
+  to{
+        stroke-dashoffset: 0;
+  }
+}
+
+svg{
+  animation: shrink 2s ease-in-out;
+  animation-delay: 2.2s;
+  animation-fill-mode: forwards;
+  width:100px;
+  margin-right: 450px;
+  margin-bottom: 150px;
+} 
+
+@keyframes shrink{
+  to{
+     transform: scale(0);
+     opacity:0;
+  }
+}
+
+#loader{
+  animation: disappear 3s ease-in-out;
+  animation-delay: 3.5s;
+  animation-fill-mode: forwards;
+}
+
+
+@keyframes disappear{
+  from{
+     opacity:1;
+  }
+  to{
+     opacity:0;
+  }
+}
+
+
+
+@keyframes zoom-in{
+  to{
+     transform:scale(1);
+  }
+}
