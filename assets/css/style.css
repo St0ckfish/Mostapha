@@ -106,6 +106,22 @@ h6 {
   transition: all 0.5s;
 }
 
+.download-btn{
+  background-color: #2357ff;
+  border-radius: 9px;
+  text-transform: uppercase;
+  box-shadow: 0px 0px 4px 2px #00000033;
+}
+
+.download-btn:hover{
+  scale: 1.05;
+  color: #fff;
+}
+
+.download-btn:active{
+  scale: 0.95;
+}
+
 /* Hide default HTML checkbox */
 .switch input {
   opacity: 0;
