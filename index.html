@@ -16,7 +16,11 @@
   <link
     href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
     rel="stylesheet">
-
+  <!--  -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"
+    integrity="sha512-H6cPm97FAsgIKmlBA4s774vqoN24V5gSQL4yBTDOY2su2DeXZVhQPxFK4P6GPdnZqM9fg1G3cMv5wD7e6cFLZQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://cdn.jsdelivr.net/npm/pace-js@latest/pace.min.js"></script>
   <!-- Vendor CSS Files -->
   <link href="assets/vendor/aos/aos.css" rel="stylesheet">
   <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -27,11 +31,15 @@
 
   <!-- Main CSS File -->
   <link href="assets/css/style.css" rel="stylesheet">
+  <link href="assets/css/alert.css" rel="stylesheet">
   <link rel="stylesheet" href="assets/css/preloader.css">
+
+
 </head>
 
-<body oncontextmenu="return false">
-<div id="loader">
+<body>
+  <!-- oncontextmenu="return false" -->
+  <div id="loader">
     <h1>Code With Mostapha</h1>
     <svg width="274" height="275" viewBox="0 0 274 275" fill="none" xmlns="http://www.w3.org/2000/svg">
       <g>
@@ -46,6 +54,10 @@
       </g>
     </svg>
   </div>
+
+
+
+
   <!-- ======= Mobile nav toggle button ======= -->
   <i class="bi bi-list mobile-nav-toggle d-xl-none"></i>
 
@@ -75,7 +87,8 @@
           <li><a href="#portfolio" class="nav-link scrollto"><i class="bx bx-book-content"></i>
               <span>Portfolio</span></a></li>
           <li><a href="#contact" class="nav-link scrollto"><i class="bx bx-envelope"></i> <span>Contact</span></a></li>
-          <a href="Mostapha’s CV.pdf" download='Eng/Mostafa’s CV.pdf' class="download-btn" ><i class="bi bi-file-earmark-text"></i> see RESUME </a>
+          <a href="Mostapha’s CV.pdf" download='Eng/Mostafa’s CV.pdf' class="download-btn"><i
+              class="bi bi-file-earmark-text"></i> see RESUME </a>
           <label class="switch">
             <input id="switch" type="checkbox">
             <span class="slider"></span>
@@ -280,10 +293,10 @@
             <div class="portfolio-wrap">
               <img src="assets/img/web1.png" class="img-fluid" alt="">
               <div class="portfolio-links">
-                <a href="assets/img/web1.png"
-                  data-gallery="portfolioGallery" class="portfolio-lightbox" title="Web 1"><i
-                    class="bx bx-plus"></i></a>
-                <a href="https://m0staphataha.github.io/Electrochip/?" title="More Details"><i class="bx bx-link"></i></a>
+                <a href="assets/img/web1.png" data-gallery="portfolioGallery" class="portfolio-lightbox"
+                  title="Web 1"><i class="bx bx-plus"></i></a>
+                <a href="https://m0staphataha.github.io/Electrochip/?" title="More Details"><i
+                    class="bx bx-link"></i></a>
               </div>
             </div>
           </div>
@@ -304,20 +317,19 @@
             <div class="portfolio-wrap">
               <img src="assets/img/web2.png" class="img-fluid" alt="">
               <div class="portfolio-links">
-                <a href="assets/img/web2.png"
-                  data-gallery="portfolioGallery" class="portfolio-lightbox" title="Web 2"><i
-                    class="bx bx-plus"></i></a>
+                <a href="assets/img/web2.png" data-gallery="portfolioGallery" class="portfolio-lightbox"
+                  title="Web 2"><i class="bx bx-plus"></i></a>
                 <a href="https://m0staphataha.github.io/Kodixa2/" title="More Details"><i class="bx bx-link"></i></a>
               </div>
             </div>
           </div>
+
           <div class="col-lg-4 col-md-6 portfolio-item filter-web">
             <div class="portfolio-wrap">
               <img src="assets/img/web3.png" class="img-fluid" alt="">
               <div class="portfolio-links">
-                <a href="assets/img/web3.png"
-                  data-gallery="portfolioGallery" class="portfolio-lightbox" title="Web 3"><i
-                    class="bx bx-plus"></i></a>
+                <a href="assets/img/web3.png" data-gallery="portfolioGallery" class="portfolio-lightbox"
+                  title="Web 2"><i class="bx bx-plus"></i></a>
                 <a href="https://m0staphataha.github.io/GDSC/" title="More Details"><i class="bx bx-link"></i></a>
               </div>
             </div>
@@ -384,7 +396,8 @@
           </div>
 
           <div class="col-lg-7 mt-5 mt-lg-0 d-flex align-items-stretch">
-            <form action="#" method="post" role="form" class="php-email-form">
+            <form action="#" method="post" role="form" class="php-email-form"
+              onsubmit="customAlert.alert('Your Message has been Send Successfully','Heads Up!')">
               <div class="row">
                 <div class="form-group col-md-6">
                   <label for="name">Your Name</label>
@@ -402,11 +415,6 @@
               <div class="form-group">
                 <label for="name">Message</label>
                 <textarea class="form-control" name="message" rows="10" id="message" required></textarea>
-              </div>
-              <div class="my-3">
-                <div class="loading">Loading</div>
-                <div class="error-message"></div>
-                <div class="sent-message">Your message has been sent. Thank you!</div>
               </div>
               <div class="text-center"><button type="submit">Send Message</button></div>
             </form>
@@ -430,6 +438,15 @@
 
   <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i
       class="bi bi-arrow-up-short"></i></a>
+  <!-- <h1 class="title">
+        Code with Mostafa
+    </h1>
+      <div id="preloader">
+        <div class="loading__text">
+            LOADING
+        </div>
+    </div> -->
+
 
   <!-- Vendor JS Files -->
   <script src="assets/js/preloader.js"></script>
@@ -445,6 +462,9 @@
 
   <!-- Main JS File -->
   <script src="assets/js/main.js"></script>
+  <script src="assets/js/form.js"></script>
+  <!-- <script src="assets/js/particles.js"></script>
+  <script src="assets/js/app.js"></script> -->
   <script src="https://smtpjs.com/v3/smtp.js"></script>
 
 </body>
